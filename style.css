@@ -8,7 +8,7 @@ body {
   color: #fff;
   font-family: sans-serif;
   background-color: #101d2c;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

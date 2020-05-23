@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vigenère cipher</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Vigenère cipher</h1>
+      <form>
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Secret Message"
+          ></textarea>
+        </div>
+
+        <div class="key">
+          <label for="key">Key</label>
+          <input type="password" id="key" placeholder="Enter secret key" />
+        </div>
+
+        <div class="encrypt-decrypt">
+          <button class="encrypyt" id="encrypt">Encrypt</button>
+          <button class="decrypyt" id="decrypt">Decrypt</button>
+        </div>
+      </form>
+    </div>
+
+    <script defer src="./app.js"></script>
+  </body>
+</html>
