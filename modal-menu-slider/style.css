@@ -11,6 +11,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+body.show-nav {
+  transform: translateX(200px);
 }
 
 nav {
@@ -119,6 +125,10 @@ button:focus {
   bottom: 0;
 }
 
+.modal-container.show-modal {
+  display: block;
+}
+
 .modal {
   background-color: #fff;
   border-radius: 5px;
@@ -130,6 +140,8 @@ button:focus {
   transform: translate(-50%, -50%);
   max-width: 100%;
   width: 400px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
 }
 
 .modal-header {
@@ -168,4 +180,13 @@ button:focus {
   top: 0;
   right: 0;
   cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
