@@ -25,6 +25,7 @@ form {
 
 form input,
 form button {
+  color: #444;
   outline: none;
   padding: 0.5rem;
   font-size: 2rem;
@@ -42,4 +43,64 @@ form button {
 form button:hover {
   color: #fff;
   background: #dd8168;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  background-color: #fff;
+  color: #333;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  outline: none;
+  background: #e6733e;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete-btn {
+  background: #738b5d;
+}
+
+.todo-item {
+  padding: 0 0.5rem;
+  color: #777;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
