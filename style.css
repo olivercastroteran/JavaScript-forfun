@@ -61,3 +61,9 @@ body {
   fill: #feb221;
   transform: scale(1.03);
 }
+
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+}
